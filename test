@@ -1,0 +1,19 @@
+<script type='text/javascript'>
+    function initEmbeddedMessaging() {
+        try {
+            embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+            embeddedservice_bootstrap.init(
+                '00DRt000001c5rY',
+                'In_App_Messenger_Chat_EOSTest',
+                'https://eosworldwide--eostest.sandbox.my.site.com/ESWInAppMessengerChat1707335770773',
+                {
+                    scrt2URL: 'https://eosworldwide--eostest.sandbox.my.salesforce-scrt.com'
+                }
+            );
+        } catch (err) {
+            console.error('Error loading Embedded Messaging: ', err);
+        }
+    };
+</script>
+<script type='text/javascript' src='https://eosworldwide--eostest.sandbox.my.site.com/ESWInAppMessengerChat1707335770773/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
